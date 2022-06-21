@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Chettan+2&family=Roboto+Mono:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.gameContainer{
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgb(242, 242, 242);    
+}
+
+.gameInfo{
+    padding: 0 34px;
+    margin-left: 30px;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.imagebox img{
+    width : 0;
+    transition: width 1s ease-in-out;
+}
+
+.info{
+    font-size: 2vw;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 50px 23px ;
+    margin-left: 100px;
+    padding: 2px 18px;
+    background: rgb(156, 238, 192);
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Baloo Chettan 2', cursive;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 800px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 2rem;
+    }
+    .info{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3, 23vw);
+        grid-template-columns: repeat(3, 23vw);
+    }
+}
+@media screen and (max-width: 350px)
+{
+    #reset{
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
